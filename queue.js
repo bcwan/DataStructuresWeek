@@ -23,5 +23,23 @@ class Queue {
     }
     return ++this.length;
   }
-  
+
+  dequeue() {
+    if (!this.front) {
+      return null;
+    }
+    const temp = this.front;
+    if (this.front === this.back) {
+      this.back = null;
+    }
+    this.front = this.front.next;
+    this.length--;
+    return temp.value;
+
+  }
+
+  size() {
+    return this.length;
+  }
+
 }
