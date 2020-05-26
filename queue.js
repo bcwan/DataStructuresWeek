@@ -1,3 +1,5 @@
+//search and access worse case is O(n)
+//insertion and deletion is O(1)
 class Node {
   constructor(val) {
     this.value = val;
