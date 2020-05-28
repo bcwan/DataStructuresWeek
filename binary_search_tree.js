@@ -1,3 +1,6 @@
+// time complexity for balanced tree: O(log(n))
+// unbalanced tree: O(n)
+
 class TreeNode {
   constructor(val) {
     this.val = val;
