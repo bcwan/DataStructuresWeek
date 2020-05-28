@@ -31,4 +31,15 @@ class BST {
       }
     }
   }
+
+  search(val, root=this.root) {
+    if (!root) return false;
+    if (val < root.val) {
+      return this.search(val, root.left);
+    } else if (val > root.val) {
+      return this.search(val, root.right);
+    } else {
+      return true;
+    }
+  }
 }
